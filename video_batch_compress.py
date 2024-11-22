@@ -11,7 +11,7 @@ def compress_videos(input_dir, output_dir):
     if not os.path.exists(input_dir):
         os.mkdir(input_dir)
     
-
+    # 手动设置两个进程处理视频压缩任务
     pool = multiprocessing.Pool(2)
 
     # 遍历输入目录的文件
